@@ -34,3 +34,39 @@
 // let b = a(20);
 // let c = b(20);
 // console.log(c);
+
+//!! 2) Array.reduce method
+//?? array.reduce is method available to perform types of action like adding or aggregation or sepration or seggregation and also running things in a series , here fucntion will be called for each element of array with intial value at beginning and then with the value returned from the last call of same fucntion
+
+//?? how it looks
+// app.reduce(callback , intialValue)
+//?? if i expand
+// app.reduce((previousValue, currentValue, currentIndex, array) => {
+//  const nextvalue = previousValue + currentValue;
+//  return nextvalue
+// },intialValue)
+
+//todo (aggregation or adding)
+// const sagar = [1, 2, 3, 4, 5];
+// const sum = sagar.reduce((prev, curr) => {
+//   let next = prev + curr;
+//   return next;
+// }, 0);
+// here 0 acts as prev , it is not mandatory too
+// console.log(sum);
+
+//todo (seggration)
+//?? we can also seprate group of elements depending on our requirements
+
+// const arr = [1.1, 1.2, 1.3, 2.1, 2.2, 2.3];
+
+// const seegrri = arr.reduce((prev, curr) => {
+//   let floori = Math.floor(curr);
+//   if (!prev[floori]) {
+//     prev[floori] = [];
+//   }
+//   prev[floori].push(curr);
+//   return prev;
+// }, {});
+
+// console.log(seegrri);
