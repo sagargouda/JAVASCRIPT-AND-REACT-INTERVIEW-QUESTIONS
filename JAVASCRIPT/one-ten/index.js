@@ -35,6 +35,8 @@
 // let c = b(20);
 // console.log(c);
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //!! 2) Array.reduce method
 //?? array.reduce is method available to perform types of action like adding or aggregation or sepration or seggregation and also running things in a series , here fucntion will be called for each element of array with intial value at beginning and then with the value returned from the last call of same fucntion
 
@@ -70,3 +72,124 @@
 // }, {});
 
 // console.log(seegrri);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//!! 3) promise
+//?? js is a synchronous language but callback function make it asynchronous and promises help us to get out of callback helll
+
+//?? how promises are created  ?
+//?? when promise is created , there are 2 outcomes fullfilled or rejected , when promises are not fullfilled or rejected they will be in a pending state ,
+//?? promises are fulfilled with a value , that value can be further processed (when the value is also promise )
+//?? promises are rejected with a reason that caused them to be rejected
+
+//?? how promise looks
+const promise = new Promise((resolve, reject) => {
+  // resolve or reject
+});
+
+//?? promise has 3 method (then , catch and finally ) they all can be used once it is settled in resolved or rejected sate.
+
+//?? then = this will be called either when promise is rejected or resolved depeding on state appropriate callback fucntion is called
+
+//?? catch (on rejected function) = this will be called when promise is rejected
+
+//?? finally (on finallly fucntion) =  this will be called evrry time after then and catch
+
+//todo working of a promise (creating a promise that will resolve after 5 seconds)
+
+// let promises = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("hey sagar");
+//   }, 5000);
+// });
+
+// promises.then((val) => {
+//   console.log(val);
+// });
+
+//todo we can also chain promises
+
+// promises
+//   .then((val) => {
+//     return "HOLA" + val;
+//   })
+//   .then((val) => {
+//     console.log(val);
+//   });
+
+// todo attacghing finally
+
+// promises
+//   .then((val) => {
+//     return "HOLA" + val;
+//   })
+//   .then((val) => {
+//     console.log(val);
+//   })
+//   .finally(() => {
+//     console.log("task is done");
+//   });
+
+//todo rejecting a promise after 5 seconds
+
+// const sagar = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("400 error ");
+//   }, 5000);
+// });
+
+// sagar
+//   .then((val) => {
+//     console.log(val);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// sagar
+//   .catch((err) => err)
+//   .then((val) => {
+//     console.log("I am chained with" + val);
+//   });
+
+//todo promise helper methods
+
+// Promise.resolve("I am resolved").then((val) => console.log(val));
+
+// Promise.reject("I am rejected ").catch((err) => console.log(err));
+
+//!! Async and await
+
+// const promises = Promise.resolve("I am resolved");
+
+// async function example(promises) {
+//   try {
+//     const resp = await promises;
+//     console.log(resp);
+//   } catch (err) {
+//     console.log(err);
+//   } finally {
+//     console.log("Task done");
+//   }
+// }
+// example(promises);
+
+//todo : fucntion decalred with async keyword returns a promise
+
+const promises = Promise.resolve("I am resolved");
+
+const example = async (promises) => {
+  try {
+    const resp = await promises;
+    console.log(resp);
+  } catch (err) {
+    console.log(err);
+  } finally {
+    console.log("Tasks are done finally ");
+  }
+};
+
+example(promises).then((val) => {
+  console.log(val);
+});
