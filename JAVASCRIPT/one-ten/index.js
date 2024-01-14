@@ -259,13 +259,42 @@ const promise = new Promise((resolve, reject) => {
 
 //!! 9)
 //todo
-let c = {
-  greeting: "Hey!",
-};
-let d;
+// let c = {
+//   greeting: "Hey!",
+// };
+// let d;
 
-d = c;
-c.greeting = "Hello";
-console.log(d.greeting);
+// d = c;
+// c.greeting = "Hello";
+// console.log(d.greeting);
 
 //?? hello , to get this you need to know primitive and refrence types , when you are copying a object you are not creating a new object but refrencing to that same old object
+
+//!! 10)
+//todo
+// let a = 3;
+// let b = new Number(3);
+// let c = 3;
+
+// console.log(a == b);
+// console.log(a === b);
+// console.log(b === c);
+//?? true , false , false , so here new number is a built in function constructor
+
+//!! 11)
+// //todo
+// class Chameleon {
+//   static colorChange(newColor) {
+//     this.newColor = newColor;
+//     return this.newColor;
+//   }
+
+//   constructor({ newColor = "green" } = {}) {
+//     this.newColor = newColor;
+//   }
+// }
+
+// const freddie = new Chameleon({ newColor: "purple" });
+// console.log(freddie.colorChange("orange"));
+
+//?? so here the fucntion is static , static methods only live on constructor in which they are created and cannot be passed down to any children or called upon instances , so we get a type error
