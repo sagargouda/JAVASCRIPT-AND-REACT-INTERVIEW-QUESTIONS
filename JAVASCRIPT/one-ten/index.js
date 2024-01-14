@@ -243,3 +243,16 @@ const promise = new Promise((resolve, reject) => {
 
 //?? so here + opeartor converts anything to number so it results 1 , so true is 1 , false is 0 and
 //?? here hero is a truthy value and we are asking is truthy value false it obvi says false , beacause truthy value can't be false
+
+//!! 8)
+//todo
+const bird = {
+  size: "small",
+};
+
+const mouse = {
+  name: "Mickey",
+  small: true,
+};
+
+//?? so here mouse.bird.size is not valid because object keys are always strings even if it integeer it gets converted to strings , here mouse.bird.size , mouse doesn't have any key called bird so it is not valid but i can do mouse[bird.size] => mouse['small'] => true
