@@ -211,12 +211,26 @@ const promise = new Promise((resolve, reject) => {
 
 //!! 5)
 //todo
-for (var i = 0; i < 3; i++) {
-  setTimeout(() => console.log(i), 1);
-}
-for (let i = 0; i < 3; i++) {
-  setTimeout(() => console.log(i), 1);
-}
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+// }
+// for (let i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1);
+// }
 
 //?? 3,3,3  0,1,2
 //?? reason = here var is global scoped during loop we increament i by 1 each time here due to set timeout is kept in web api space , the for loop is given more priotiy so loop runs fast and i becomes 3 and when set timeout logs i became 3 , so 333 but let has it's own scope as they are block scoped during each iteration i will have a new value and each value is scoped inside loop
+
+//!! 6)
+//todo
+// const shape = {
+//   radius: 10,
+//   diameter() {
+//     return this.radius * 2;
+//   },
+//   perimeter: () => 2 * Math.PI * this.radius,
+// };
+
+// console.log(shape.diameter());
+// console.log(shape.perimeter());
+//?? 20 , NaN because arrow fucnitons don't have their own this keywrod , so what happens is this keyword in arrow fucnitons refers to it's current surrounding scope so it doesn't refer to shape object but surrounding scope window for eaxmple here
