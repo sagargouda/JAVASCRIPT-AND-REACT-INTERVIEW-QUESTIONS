@@ -177,19 +177,34 @@ const promise = new Promise((resolve, reject) => {
 
 //todo : fucntion decalred with async keyword returns a promise
 
-const promises = Promise.resolve("I am resolved");
+// const promises = Promise.resolve("I am resolved");
 
-const example = async (promises) => {
-  try {
-    const resp = await promises;
-    console.log(resp);
-  } catch (err) {
-    console.log(err);
-  } finally {
-    console.log("Tasks are done finally ");
-  }
-};
+// const example = async (promises) => {
+//   try {
+//     const resp = await promises;
+//     console.log(resp);
+//   } catch (err) {
+//     console.log(err);
+//   } finally {
+//     console.log("Tasks are done finally ");
+//   }
+// };
 
-example(promises).then((val) => {
-  console.log(val);
-});
+// example(promises).then((val) => {
+//   console.log(val);
+// });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//!! 4)
+//todo
+// function sayHello() {
+//   console.log(name);
+//   console.log(age);
+
+//   var name = "sagar";
+//   let age = 21;
+// }
+// sayHello();
+
+//?? undefined , refrence error
