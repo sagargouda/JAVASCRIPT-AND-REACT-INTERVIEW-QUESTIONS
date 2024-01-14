@@ -234,3 +234,12 @@ const promise = new Promise((resolve, reject) => {
 // console.log(shape.diameter());
 // console.log(shape.perimeter());
 //?? 20 , NaN because arrow fucnitons don't have their own this keywrod , so what happens is this keyword in arrow fucnitons refers to it's current surrounding scope so it doesn't refer to shape object but surrounding scope window for eaxmple here
+
+//!! 7)
+//todo
++true; //1
++"sgaar"; // NAN
+!"hero"; //false
+
+//?? so here + opeartor converts anything to number so it results 1 , so true is 1 , false is 0 and
+//?? here hero is a truthy value and we are asking is truthy value false it obvi says false , beacause truthy value can't be false
