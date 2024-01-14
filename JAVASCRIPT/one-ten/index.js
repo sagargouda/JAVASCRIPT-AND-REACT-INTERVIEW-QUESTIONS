@@ -246,13 +246,26 @@ const promise = new Promise((resolve, reject) => {
 
 //!! 8)
 //todo
-const bird = {
-  size: "small",
-};
+// const bird = {
+//   size: "small",
+// };
 
-const mouse = {
-  name: "Mickey",
-  small: true,
-};
+// const mouse = {
+//   name: "Mickey",
+//   small: true,
+// };
 
 //?? so here mouse.bird.size is not valid because object keys are always strings even if it integeer it gets converted to strings , here mouse.bird.size , mouse doesn't have any key called bird so it is not valid but i can do mouse[bird.size] => mouse['small'] => true
+
+//!! 9)
+//todo
+let c = {
+  greeting: "Hey!",
+};
+let d;
+
+d = c;
+c.greeting = "Hello";
+console.log(d.greeting);
+
+//?? hello , to get this you need to know primitive and refrence types , when you are copying a object you are not creating a new object but refrencing to that same old object
