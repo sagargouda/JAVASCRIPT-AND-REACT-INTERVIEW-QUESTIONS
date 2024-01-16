@@ -46,3 +46,7 @@
 //?? Person {firstName: "Lydia", lastName: "Hallie"} and undefined
 
 //?? here for reddy we didn't use new keyword , when we use new , this refers to the new empty object we create , when we don't add new , this refers to global object. so when this.firstname = "arjun" and this.lastname = "singh" which means global.firstname = "arjun" and global.lastname = "singh" so arjun is left undefined since we don't return value from person fcuntion.
+
+//!! 16
+//todo  what are 3 phases of event propagtion
+//?? capturing > target > bubbling , so during capturing phase the event goes through anscestoir elements down to target element and it reaches to target element and then bubbling begins
