@@ -16,17 +16,33 @@
 //?? fucntion are objects only we can do this
 
 //!! 14)
-//Todo
-function Person(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-}
+// //Todo
+// function Person(firstName, lastName) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// }
 
-const member = new Person("Lydia", "Hallie");
-Person.getFullName = function () {
-  return `${this.firstName} ${this.lastName}`;
-};
+// const member = new Person("Lydia", "Hallie");
+// Person.getFullName = function () {
+//   return `${this.firstName} ${this.lastName}`;
+// };
 
-console.log(member.getFullName());
+// console.log(member.getFullName());
 
 //?? in javascript , function are just objects , so method getFullname gets added to constrcutp fucntion object itself . for that reason we can call person.getfullname() and member.getfullname throws typeerror
+
+//!! 15)
+//todo
+// function Person(firstName, lastName) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// }
+
+// const sagar = new Person("sagar", "reedy");
+// const arjun = Person("arjun", "singh");
+
+// console.log(sagar);
+// console.log(arjun);
+//?? Person {firstName: "Lydia", lastName: "Hallie"} and undefined
+
+//?? here for reddy we didn't use new keyword , when we use new , this refers to the new empty object we create , when we don't add new , this refers to global object. so when this.firstname = "arjun" and this.lastname = "singh" which means global.firstname = "arjun" and global.lastname = "singh" so arjun is left undefined since we don't return value from person fcuntion.
