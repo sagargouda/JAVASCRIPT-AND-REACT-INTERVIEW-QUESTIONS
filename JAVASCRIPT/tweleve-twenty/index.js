@@ -57,9 +57,18 @@
 
 //!! 18
 //todo
-function sum(a, b) {
-  return a + b;
-}
+// function sum(a, b) {
+//   return a + b;
+// }
 
-sum(1, "2");
+// sum(1, "2");
 //?? 12 (coercion is converting one type to another)
+
+//!! 19
+//todo
+let number = 0;
+console.log(number++);
+console.log(++number);
+console.log(number);
+
+//?? 0,2,2
