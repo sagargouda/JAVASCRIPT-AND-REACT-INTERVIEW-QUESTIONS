@@ -22,3 +22,15 @@
 
 // getAge(21);
 //?? it is indeed object , you will understand this when you know about argumnents object
+
+//!! 23
+//todo
+function getAge() {
+  "use strict";
+  age = 21;
+  console.log(age);
+}
+
+getAge();
+
+//?? we get refrence error , if we don't use use strict it woudl work
