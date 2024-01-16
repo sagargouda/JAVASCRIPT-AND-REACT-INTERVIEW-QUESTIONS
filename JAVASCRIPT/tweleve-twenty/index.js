@@ -66,9 +66,25 @@
 
 //!! 19
 //todo
-let number = 0;
-console.log(number++);
-console.log(++number);
-console.log(number);
+// let number = 0;
+// console.log(number++);
+// console.log(++number);
+// console.log(number);
 
 //?? 0,2,2
+
+//!! 20
+//todo
+// function getPersonInfo(one, two, three) {
+//   console.log(one);
+//   console.log(two);
+//   console.log(three);
+// }
+
+// const person = "sagar";
+// const age = 23;
+
+// getPersonInfo`${person} is ${age} years old`;
+
+//?? ["", " is ", " years old"] "sagar" 23
+//?? so here the logic is wghen we send template literals the value of first argunent is always an array of string values and remaining arguements get value of passded expresion
