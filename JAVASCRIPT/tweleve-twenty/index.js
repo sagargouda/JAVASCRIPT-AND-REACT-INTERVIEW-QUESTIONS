@@ -54,3 +54,12 @@
 //!! 17
 //todo) all object have prototypes
 //?? true and false both because all objects have prototypes except for base object , base object is root of prottype chain and is automatically created by js runtime , base object is Object.prototype , so base object is like blueprint or templateb for other objects. it serves as root of prototype chain, providing set of common properties and methods that are inherited by all objects in language , when i crfeate objects , they inherit form base project and this inheritance a protype chain
+
+//!! 18
+//todo
+function sum(a, b) {
+  return a + b;
+}
+
+sum(1, "2");
+//?? 12 (coercion is converting one type to another)
