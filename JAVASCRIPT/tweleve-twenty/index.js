@@ -50,3 +50,7 @@
 //!! 16
 //todo  what are 3 phases of event propagtion
 //?? capturing > target > bubbling , so during capturing phase the event goes through anscestoir elements down to target element and it reaches to target element and then bubbling begins
+
+//!! 17
+//todo) all object have prototypes
+//?? true and false both because all objects have prototypes except for base object , base object is root of prottype chain and is automatically created by js runtime , base object is Object.prototype , so base object is like blueprint or templateb for other objects. it serves as root of prototype chain, providing set of common properties and methods that are inherited by all objects in language , when i crfeate objects , they inherit form base project and this inheritance a protype chain
