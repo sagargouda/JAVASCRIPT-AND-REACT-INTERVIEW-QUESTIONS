@@ -47,8 +47,20 @@ getAge();
 
 //!! 26
 //todo
-var num = 8;
-var num = 10;
+// var num = 8;
+// var num = 10;
 
-console.log(num);
+// console.log(num);
 //?? answer is 10 as var keyword we can decalre multiple variable with same name
+
+//!! 27
+//todo
+// const obj = { 1: "a", 2: "b", 3: "c" };
+// const set = new Set([1, 2, 3, 4, 5]);
+
+// obj.hasOwnProperty("1");
+// obj.hasOwnProperty(1);
+// set.has("1");
+// set.has(1);
+
+//?? true , true , false , true beacuse all object keys excluding symbols are strings , so even if don't type it will convert as string but for set it doesn't work that way it has numberic type not string type
