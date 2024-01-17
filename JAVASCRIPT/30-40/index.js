@@ -12,12 +12,24 @@
 
 //!! 32
 //todo
-const a = {};
-const b = { key: "b" };
-const c = { key: "c" };
+// const a = {};
+// const b = { key: "b" };
+// const c = { key: "c" };
 
-a[b] = 123;
-a[c] = 456;
+// a[b] = 123;
+// a[c] = 456;
 
-console.log(a[b]);
+// console.log(a[b]);
 //?? here object keys are automatically converted to strings so i am setting object key to object a with value 123; when we stringify an object it becomes  "[object Object]" so a["[object Object]"] = 123 and a["[object Object]"] = 456 , so when i log a[b] which is a["[object Object]"] , we see 456
+
+//!! 33
+//todo
+const foo = () => console.log("First");
+const bar = () => setTimeout(() => console.log("Second"));
+const baz = () => console.log("Third");
+
+bar();
+foo();
+baz();
+
+//?? first , third , second
