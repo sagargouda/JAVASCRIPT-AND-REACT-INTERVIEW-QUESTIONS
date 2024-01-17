@@ -42,5 +42,13 @@ getAge();
 
 //!! 25
 //todo how long does coold_secret accessible
-sessionStorage.setItem("cool_secret", 123);
+// sessionStorage.setItem("cool_secret", 123);
 //?? data stored in session storage is removed after closing tab , if i have used local storage data may have been there
+
+//!! 26
+//todo
+var num = 8;
+var num = 10;
+
+console.log(num);
+//?? answer is 10 as var keyword we can decalre multiple variable with same name
