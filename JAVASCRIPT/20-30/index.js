@@ -70,3 +70,7 @@ getAge();
 // const obj = { a: "one", b: "two", a: "three" };
 // console.log(obj);
 //??  {a:"three",b:"two"} because if i have 2 keys with same name the key will replaced . it will still be in its first position but with last specified value
+
+//!! 29
+//todo  The JavaScript global execution context creates two things for you: the global object, and the "this" keyword.
+//?? true
