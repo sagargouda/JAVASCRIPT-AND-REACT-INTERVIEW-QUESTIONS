@@ -34,3 +34,8 @@ function getAge() {
 getAge();
 
 //?? we get refrence error , if we don't use use strict it woudl work
+
+//!! 24
+//todo
+const sum = eval("10*10+5");
+//?? answer = 105 because eval evealutes code that is passed as string so it evaluates it expression as string and rteturns a number 105
