@@ -64,3 +64,9 @@ getAge();
 // set.has(1);
 
 //?? true , true , false , true beacuse all object keys excluding symbols are strings , so even if don't type it will convert as string but for set it doesn't work that way it has numberic type not string type
+
+//!! 28
+//todo
+// const obj = { a: "one", b: "two", a: "three" };
+// console.log(obj);
+//??  {a:"three",b:"two"} because if i have 2 keys with same name the key will replaced . it will still be in its first position but with last specified value
