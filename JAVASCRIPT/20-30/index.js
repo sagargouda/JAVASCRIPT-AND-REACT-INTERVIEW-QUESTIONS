@@ -37,5 +37,10 @@ getAge();
 
 //!! 24
 //todo
-const sum = eval("10*10+5");
+// const sum = eval("10*10+5");
 //?? answer = 105 because eval evealutes code that is passed as string so it evaluates it expression as string and rteturns a number 105
+
+//!! 25
+//todo how long does coold_secret accessible
+sessionStorage.setItem("cool_secret", 123);
+//?? data stored in session storage is removed after closing tab , if i have used local storage data may have been there
