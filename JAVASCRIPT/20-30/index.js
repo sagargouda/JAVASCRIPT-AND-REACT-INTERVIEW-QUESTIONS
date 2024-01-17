@@ -74,3 +74,12 @@ getAge();
 //!! 29
 //todo  The JavaScript global execution context creates two things for you: the global object, and the "this" keyword.
 //?? true
+
+//!! 30
+//todo
+for (let i = 1; i < 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+
+//?? 1,2,4
